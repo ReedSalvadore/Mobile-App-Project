@@ -1,9 +1,29 @@
-# Mobile-App-Project
-#What is the app? (A fitness tracker for college student/student athletes
-#What issue does it solve? (Helping students build a workout routine between classes)
-#Where will it run? (Android/MIT App Inventor)
-#What does a user see and where is it stored? (MIT App Inventor blocks, Firebase, or local)
-#What are the main things the app does? (Log steps, class times, set reminders, etc.)
-#Design
-**Screen 1 (Home):** Features a header, a 'Start' button, and a status label.
-**Screen 2 (Input):** Contains a text box for user entry and a 'Save' button
+# FitGap - Fitness Scheduler
+
+**Android App for College Students**
+
+FitGap helps college students find short free gaps between classes and quickly schedule workouts. It turns small pockets of time into effective fitness routines.
+
+## Project Status (Week 4)
+- Wireframes completed (initial + improved design)
+- GitHub repository and Wiki set up
+- Basic Android Studio project initialized
+
+## Features (Planned)
+- Add and manage class schedule
+- Automatic gap detection between classes
+- Quick workout suggestions (10/20/30 min)
+- Simple weekly timeline view
+- Bottom navigation for easy access
+
+## Changelog
+- **Week 4**: Added improved wireframe with bottom navigation bar and floating action button. Created Wiki page.
+- **Week 3**: Initial repo setup and basic wireframes.
+
+
+## Next Steps
+- Build main screens in Android Studio
+- Implement class input and gap logic
+- Prepare final submission by end of Week 7
+
+**Repository**: https://github.com/ReedSalvadore/Mobile-App-Project
