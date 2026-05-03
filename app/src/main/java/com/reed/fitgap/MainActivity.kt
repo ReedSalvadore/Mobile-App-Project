@@ -11,28 +11,32 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 
-class MainActivity : ComponentActivity() {
+// Add this import for Experimental Material3 API
+import androidx.compose.material3.ExperimentalMaterial3Api
 
+class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            FitGapApp()
+            MainScreen()
         }
     }
 }
 
+// Add @OptIn annotation here as your professor said
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun FitGapApp() {
+fun MainScreen() {
     MaterialTheme {
         Scaffold(
             topBar = {
                 TopAppBar(title = { Text("FitGap") })
             }
-        ) { paddingValues ->
+        ) { padding ->
             Column(
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(paddingValues)
+                    .padding(padding)
                     .padding(24.dp),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
@@ -44,19 +48,13 @@ fun FitGapApp() {
 
                 Spacer(modifier = Modifier.height(48.dp))
 
-                Button(
-                    onClick = { },
-                    modifier = Modifier.fillMaxWidth(0.85f)
-                ) {
+                Button(onClick = { }, modifier = Modifier.fillMaxWidth(0.85f)) {
                     Text("Add My Classes")
                 }
 
                 Spacer(modifier = Modifier.height(16.dp))
 
-                Button(
-                    onClick = { },
-                    modifier = Modifier.fillMaxWidth(0.85f)
-                ) {
+                Button(onClick = { }, modifier = Modifier.fillMaxWidth(0.85f)) {
                     Text("Find Workout Gaps")
                 }
 
